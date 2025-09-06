@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Tumor Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Brain Tumor Prediction System</h1>
+        <div class="navigation">
+            <a href="#" class="nav-link active" data-page="home">Home</a>
+            <a href="#" class="nav-link" data-page="about">About</a>
+            <a href="#" class="nav-link" data-page="recognition">Brain Tumor Detection</a>
+        </div>
+
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <h2>Welcome to Brain Tumor Prediction System</h2>
+            <img src="{{ url_for('static', filename='brain.jpg') }}" alt="Brain MRI" class="background-image">
+            <p>
+                Welcome to the <strong>Brain Tumor Prediction System</strong>!<br>
+                This system helps you detect brain tumors from MRI scans instantly.<br>
+                Just <strong>upload an MRI image</strong>, and our AI model will <strong>identify tumor type</strong> with high accuracy!
+            </p>
+        </div>
+
+        <!-- About Page -->
+        <div id="about" class="page">
+            <h2>About the Project</h2>
+            <p>
+                This system uses deep learning to classify brain MRI scans into 4 categories:
+            </p>
+            <ul>
+                <li><strong>Glioma Tumor</strong></li>
+                <li><strong>Meningioma Tumor</strong></li>
+                <li><strong>Pituitary Tumor</strong></li>
+                <li><strong>No Tumor</strong></li>
+            </ul>
+            <p>
+                The model was trained on thousands of MRI scans to achieve high accuracy in tumor detection.
+            </p>
+        </div>
+
+        <!-- Tumor Detection Page -->
+        <div id="recognition" class="page">
+            <h2>Brain Tumor Detection</h2>
+            <form id="upload-form">
+                <input type="file" id="file-input" name="file" accept="image/*" required>
+                <button type="submit">Analyze MRI Scan</button>
+            </form>
+            <div id="result">
+                <img id="uploaded-image" src="" alt="Uploaded MRI Scan" class="uploaded-image">
+                <p id="prediction-result"></p>
+                <p id="confidence-result"></p>
+
+                <button id="details-button" style="display: none;">View Tumor Details</button>
+                <div id="details-section" style="display: none;">
+                    <h3>Tumor Information</h3>
+                    <p id="tumor-description"></p>
+                    <h4>Symptoms:</h4>
+                    <ul id="tumor-symptoms"></ul>
+                    <h4>Treatment Options:</h4>
+                    <ul id="tumor-treatment"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

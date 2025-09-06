@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual environments
+env/
+venv/
+.env
+.venv
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+uploads/
+temp/
+
+# Development
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter Notebooks
+*.ipynb_checkpoints
+
+# Local testing
+testing/
