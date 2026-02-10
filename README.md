@@ -1,6 +1,6 @@
 # 🧠 Brain Tumor Detection System
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-🚀%20Try%20It%20Now-brightgreen?style=for-the-badge)](https://brain-tumor-prediction-model.onrender.com/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-🚀%20Try%20It%20Now-brightgreen?style=for-the-badge)](https://brain-tumor-prediction-model-1.onrender.com)
 [![Python](https://img.shields.io/badge/Python-3.11.9-blue?style=flat-square&logo=python)](https://python.org)
 [![Flask](https://img.shields.io/badge/Flask-3.0.0-red?style=flat-square&logo=flask)](https://flask.palletsprojects.com)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.13+-orange?style=flat-square&logo=tensorflow)](https://tensorflow.org)
