@@ -9,7 +9,7 @@ An AI-powered web application that uses deep learning to classify brain MRI scan
 
 ## 🎯 Live Demo
 
-**🔗 Try it now**: [https://brain-tumor-prediction-model.onrender.com/](https://brain-tumor-prediction-model.onrender.com/)
+**🔗 Try it now**: [https://brain-tumor-prediction-model-1.onrender.com](https://brain-tumor-prediction-model-1.onrender.com/)
 
 ![Brain Tumor Detection Demo](static/brain.jpg)
 
